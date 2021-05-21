@@ -2,7 +2,9 @@ const xml2js = module.exports;
 
 const xml = {
   url: 'https://gist.githubusercontent.com/Ram-N/5189462/raw/46db0b43ad7bf9cbd32a8932f3ab981bd4b4da7c/books.xml',
-  qs: { format: 'xml' }
+  qs: {
+    format: 'xml'
+  }
 };
 
 REQUEST(xml, function(error, response, body) {
